@@ -1,0 +1,166 @@
+<!--<div class="row">-->
+<!--  <div class="col-md-3">-->
+<!--    <span class="hipster img-fluid rounded"></span>-->
+<!--  </div>-->
+
+<!--  <div class="col-md-9">-->
+<!--    <h1 class="display-4"><span jhiTranslate="home.title">Welcome,</span> (Discover Me)</h1>-->
+
+<!--    <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>-->
+
+<!--    <div [ngSwitch]="account !== null">-->
+<!--      <div class="alert alert-success" *ngSwitchCase="true">-->
+<!--        <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message" [translateValues]="{ username: account.login }"-->
+<!--          >You are logged in as user "{{ account.login }}".</span-->
+<!--        >-->
+<!--      </div>-->
+
+<!--      <div class="alert alert-warning" *ngSwitchCase="false">-->
+<!--        <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to </span>-->
+<!--        <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign in</a-->
+<!--        ><span jhiTranslate="global.messages.info.authenticated.suffix"-->
+<!--          >, you can try the default accounts:<br />- Administrator (login="admin" and password="admin") <br />- User (login="user" and-->
+<!--          password="user").</span-->
+<!--        >-->
+<!--      </div>-->
+
+<!--      <div class="alert alert-warning" *ngSwitchCase="false">-->
+<!--        <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;-->
+<!--        <a class="alert-link" routerLink="/account/register" jhiTranslate="global.messages.info.register.link">Register a new account</a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <p jhiTranslate="home.question">If you have any question on JHipster:</p>-->
+
+<!--    <ul>-->
+<!--      <li>-->
+<!--        <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage"-->
+<!--          >JHipster homepage</a-->
+<!--        >-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a-->
+<!--          href="https://stackoverflow.com/tags/jhipster/info"-->
+<!--          target="_blank"-->
+<!--          rel="noopener noreferrer"-->
+<!--          jhiTranslate="home.link.stackoverflow"-->
+<!--          >JHipster on Stack Overflow</a-->
+<!--        >-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a-->
+<!--          href="https://github.com/jhipster/generator-jhipster/issues?state=open"-->
+<!--          target="_blank"-->
+<!--          rel="noopener noreferrer"-->
+<!--          jhiTranslate="home.link.bugtracker"-->
+<!--          >JHipster bug tracker</a-->
+<!--        >-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.chat"-->
+<!--          >JHipster public chat room</a-->
+<!--        >-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.follow"-->
+<!--          >follow @jhipster on Twitter</a-->
+<!--        >-->
+<!--      </li>-->
+<!--    </ul>-->
+
+<!--    <p>-->
+<!--      <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span>-->
+<!--      <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.github"-->
+<!--        >GitHub</a-->
+<!--      >!-->
+<!--    </p>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div>
+  <div class="d-flex justify-content-between align-items-center">
+    <h1 class="display-6"><span>List Of Projects This Month </span></h1>
+    <a class="btn btn-lg btn-outline btn-info">Submit Project</a>
+  </div><hr>
+  <!-- This table will be shown during project submission period and during voting period-->
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col" style="width:150px;">Cover Art</th>
+      <th scope="col">Title</th>
+      <th scope="col">Stage Name</th>
+      <th scope="col">Content Type</th>
+      <th scope="col">Release Platforms</th>
+      <th scope="col">No of Content Resource</th>
+      <th scope="col">No of Supporters</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th><img src="../../content/images/bbnner.png" class="img-thumbnail"></th>
+      <td>Sensima</td>
+      <td>MarkGold</td>
+      <td>Song</td>
+      <td><i class="fa fa-instagram" aria-hidden="true"></i> | <img src="content/images/tiktok.svg" width="12"></td>
+      <td>5</td>
+      <td>67</td>
+      <td><button class="btn btn-success">Vote</button></td>
+    </tr>
+    <tr>
+      <th><img src="../../content/images/logo.png" class="img-thumbnail"></th>
+      <td>Only Me</td>
+      <td>Backy G</td>
+      <td>Song</td>
+      <td><i class="fa fa-youtube"></i> | <img src="content/images/tiktok.svg" width="12"></td>
+      <td>4</td>
+      <td>47</td>
+      <td><button class="btn btn-success">Vote</button></td>
+    </tr>
+    <tr>
+      <th><img src="../../content/images/jhipster_family_member_2_head-512.png" class="img-thumbnail"></th>
+      <td>Emotions</td>
+      <td>EneKid</td>
+      <td>Song</td>
+      <td><i class="fa fa-instagram"></i> | <i class="fa fa-facebook"></i>
+      <td>6</td>
+      <td>53</td>
+      <td><button class="btn btn-success">Vote</button></td>
+    </tr>
+    </tbody>
+  </table>
+<!-- This table will be shown after project submission period has ended, after voting has been taken place and the projects to be promoted for the month has been set-->
+<!--  <table class="table">-->
+<!--    <thead class="thead-light">-->
+<!--    <tr>-->
+<!--      <th scope="col">#</th>-->
+<!--      <th scope="col">First</th>-->
+<!--      <th scope="col">Last</th>-->
+<!--      <th scope="col">Handle</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--      <th scope="row">1</th>-->
+<!--      <td>Mark</td>-->
+<!--      <td>Otto</td>-->
+<!--      <td>@mdo</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <th scope="row">2</th>-->
+<!--      <td>Jacob</td>-->
+<!--      <td>Thornton</td>-->
+<!--      <td>@fat</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <th scope="row">3</th>-->
+<!--      <td>Larry</td>-->
+<!--      <td>the Bird</td>-->
+<!--      <td>@twitter</td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--  </table>-->
+  <div>
+    <div class="text-center"><a class="btn btn-outline-success" href="https://wa.me/08021493815">Join Platform <i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+  </div>
+</div>
